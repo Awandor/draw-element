@@ -9,6 +9,7 @@ http://www.williammalone.com/articles/create-html5-canvas-javascript-drawing-app
   <template>
     <script src="../webcomponentsjs/webcomponents-lite.js"></script>
     <link rel="import" href="draw-element.html">
+    <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
 ```
