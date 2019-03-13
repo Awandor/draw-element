@@ -3,6 +3,19 @@
 `<draw-element>` is a simple draw component based on William Malone's app:
 http://www.williammalone.com/articles/create-html5-canvas-javascript-drawing-app/#demo-simple
 
+<!--
+```
+<custom-element-demo>
+  <template>
+    <link rel="import" href="draw-element.html">
+  </template>
+</custom-element-demo>
+```
+-->
+```html
+<draw-element></draw-element>
+```
+
 ## Polymer Component for painting
 
 Polymer Component that offers a canvas area where the user is able to paint with the mouse or the finger
