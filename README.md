@@ -3,7 +3,7 @@
 `<draw-element>` is a simple draw component based on William Malone's app:
 http://www.williammalone.com/articles/create-html5-canvas-javascript-drawing-app/#demo-simple
 
-<!--
+<!---
 ```
 <custom-element-demo>
   <template>
@@ -14,7 +14,7 @@ http://www.williammalone.com/articles/create-html5-canvas-javascript-drawing-app
 ```
 -->
 ```html
-<draw-element></draw-element>
+<draw-element>...</draw-element>
 ```
 
 ## Polymer Component for painting
@@ -51,6 +51,7 @@ Example:
     line-color="azure"
     background-color="rgba(21, 24, 56, 1)"
     border-color="#000000">
+</draw-element>
 ```
 
 ## Styling
