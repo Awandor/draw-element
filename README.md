@@ -65,6 +65,6 @@ Example:
 
 ### Running the demo locally
 ```sh
-polymer serve --npm
+polymer serve
 open http://127.0.0.1:<port>/demo/
 ```
