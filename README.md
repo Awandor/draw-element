@@ -1,3 +1,5 @@
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/Awandor/draw-element)
+
 # \<draw-element\>
 
 `<draw-element>` is a simple draw component based on William Malone's app:
