@@ -57,56 +57,64 @@
           * @type {String}
           */
           context: {
-            type: String
+            type: String,
+            readonly: true
           },
           /**
           * paint colour in hexadecimal format
           * @type {String}
           */
           lineColor: {
-            type: String
+            type: String,
+            value: '#df4b26'
           },
           /**
           * pen point width in pixels
           * @type {Number}
           */
           lineWidth: {
-            type: Number
+            type: Number,
+            value: 11
           },
           /**
           * pen point shape, possible values: "round" (default), "bevel", "miter"
           * @type {String}
           */
           lineJoin: {
-            type: String
+            type: String,
+            value: 'round'
           },
           /**
           * background colour in hexadecimal format
           * @type {String}
           */
           backgroundColor: {
-            type: String
+            type: String,
+            value: '#fff8eb'
           },
           /**
           * canvas border colour in hexadecimal format
           * @type {String}
           */
           borderColor: {
-            type: String
+            type: String,
+            value: '#d6d6d6'
           },
           /**
           * pen point width in pixels
           * @type {Number}
           */
           width: {
-            type: Number
+            type: Number,
+            value: 490
           },
           /**
           * pen point height in pixels
           * @type {Number}
           */
           height: {
-            type: Number
+            type: Number,
+            value: 220
           },
           /**
           * paint flag
