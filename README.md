@@ -7,6 +7,7 @@ http://www.williammalone.com/articles/create-html5-canvas-javascript-drawing-app
 ```
 <custom-element-demo>
   <template>
+    <script src="../webcomponentsjs/webcomponents-lite.js"></script>
     <link rel="import" href="draw-element.html">
   </template>
 </custom-element-demo>
