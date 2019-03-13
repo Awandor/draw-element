@@ -62,3 +62,9 @@ Example:
  Custom property | Description | Default
 -----------------|-------------|---------
 --draw-element | Mixing applied to entire component | {}
+
+### Running the demo locally
+```sh
+polymer serve --npm
+open http://127.0.0.1:<port>/demo/
+```
