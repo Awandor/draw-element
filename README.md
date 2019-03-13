@@ -8,6 +8,12 @@ http://www.williammalone.com/articles/create-html5-canvas-javascript-drawing-app
 Polymer Component that offers a canvas area where the user is able to paint with the mouse or the finger
 depending on the device used, desktop or smartphone.
 
+Usage:
+
+```html
+<draw-element></draw-element>
+```
+
 It is possible to customize the Component.
 
  Custom property | Description | Default
@@ -16,12 +22,21 @@ width | canvas width in pixels | 490
 height | canvas height in pixels | 220
 line-width | pen point width in pixels | 11
 line-join | pen point shape, possible values: "round", "bevel", "miter" | "round"
-line-color | paint colour in hexadecimal format | #df4b26
-background-color | background colour in hexadecimal format | #fff8eb
-border-color | canvas border colour in hexadecimal format | #d6d6d6
+line-color | paint colour in css format | #df4b26
+background-color | background colour in css format | #fff8eb
+border-color | canvas border colour in css format | #d6d6d6
+
+Example:
 
 ```html
-<draw-element width="490" height="220" line-width="11" line-join="round" line-color="#df4b26" background-color="#fff8eb" border-color="#d6d6d6"></draw-element>
+<draw-element
+    width="500"
+    height="300"
+    line-width="5"
+    line-join="round"
+    line-color="azure"
+    background-color="rgba(21, 24, 56, 1)"
+    border-color="#000000">
 ```
 
 ## Styling

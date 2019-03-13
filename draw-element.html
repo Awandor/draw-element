@@ -19,21 +19,43 @@
 
   <script>
     /**
-    * `draw-element`
-    * Simple draw component based on William Malone's app:
+    * * `<draw-element>` is a simple draw component based on William Malone's app:
     * http://www.williammalone.com/articles/create-html5-canvas-javascript-drawing-app/#demo-simple
-    * 
-    * `<draw-element\>`
     * 
     * ## Polymer Component for painting
     * 
     * Polymer Component that offers a canvas area where the user is able to paint with the mouse or the finger
     * depending on the device used, desktop or smartphone.
     * 
-    * It is possible to customize the Component.
+    * Usage:
     * 
     * ```html
-    * <draw-element width="490" height="220" line-width="11" line-join="round" line-color="#df4b26" background-color="#fff8eb" border-color="#d6d6d6"></draw-element>
+    * <draw-element></draw-element>
+    * ```
+    * 
+    * It is possible to customize the Component.
+    * 
+    * Custom property | Description | Default
+    * -----------------|-------------|---------
+    * width | canvas width in pixels | 490
+    * height | canvas height in pixels | 220
+    * line-width | pen point width in pixels | 11
+    * line-join | pen point shape, possible values: "round", "bevel", "miter" | "round"
+    * line-color | paint colour in css format | #df4b26
+    * background-color | background colour in css format | #fff8eb
+    * border-color | canvas border colour in css format | #d6d6d6
+    * 
+    * Example:
+      * 
+    * ```html
+    * <draw-element
+    *     width="500"
+    *     height="300"
+    *     line-width="5"
+    *     line-join="round"
+    *     line-color="azure"
+    *     background-color="rgba(21, 24, 56, 1)"
+    *     border-color="#000000">
     * ```
     * 
     * ## Styling
@@ -61,7 +83,7 @@
             readonly: true
           },
           /**
-          * paint colour in hexadecimal format
+          * paint colour in css format
           * @type {String}
           */
           lineColor: {
@@ -85,7 +107,7 @@
             value: 'round'
           },
           /**
-          * background colour in hexadecimal format
+          * background colour in css format
           * @type {String}
           */
           backgroundColor: {
@@ -93,7 +115,7 @@
             value: '#fff8eb'
           },
           /**
-          * canvas border colour in hexadecimal format
+          * canvas border colour in css format
           * @type {String}
           */
           borderColor: {
@@ -139,7 +161,7 @@
             type: Number
           },
           /**
-          * mouse / touch X positions in pixels while painting
+          * saves mouse / touch X positions in pixels while painting
           * @type {Array}
           */
           clickX: {
@@ -149,7 +171,7 @@
             }
           },
           /**
-          * mouse / touch Y positions in pixels while painting
+          * saves mouse / touch Y positions in pixels while painting
           * @type {Array}
           */
           clickY: {
@@ -159,7 +181,7 @@
             }
           },
           /**
-          * painting trues
+          * saves click booleans, each false means the end and start of a new trace
           * @type {Array}
           */
           clickDrag: {
@@ -178,7 +200,7 @@
       setBackground(){
         this.context.fillStyle = this.backgroundColor;
         this.context.fillRect(0, 0, this.context.canvas.width, this.context.canvas.height);
-        this.context.canvas.style.borderColor = this.borderColor;
+        this.context.canvas.style.border = '1px solid' + this.borderColor;
       }
 
       /**
