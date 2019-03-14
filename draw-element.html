@@ -8,7 +8,6 @@
         display: block;
         @apply --draw-element;
       }
-      
     </style>
     <canvas id="canvas" width="[[width]]" height="[[height]]" 
       on-down="draw" on-up="stopDrawing" on-mouseleave="stopDrawing" on-track="record" 
@@ -197,7 +196,7 @@
       * This method sets the background colour of the canvas
       * and the canvas border colour.
       */
-      setBackground(){
+      setBackground() {
         this.context.fillStyle = this.backgroundColor;
         this.context.fillRect(0, 0, this.context.canvas.width, this.context.canvas.height);
         this.context.canvas.style.border = '1px solid' + this.borderColor;

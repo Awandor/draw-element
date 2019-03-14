@@ -1,0 +1,26 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="test-element">
+<template>
+    <style>
+        :host {
+            display: block;
+        }
+    </style>
+    Hello World
+    <br>
+    <button on-click="clear">clear</button>
+</template>
+
+<script>
+    class TestElement extends Polymer.GestureEventListeners(Polymer.Element) {
+
+        static get is() { return 'test-element'; }
+        static get properties() {
+            return {
+            };
+        }
+    }
+        window.customElements.define(TestElement.is, TestElement);
+  </script>
+</dom-module>

@@ -17,7 +17,7 @@ http://www.williammalone.com/articles/create-html5-canvas-javascript-drawing-app
 ```
 -->
 ```html
-<draw-element>...</draw-element>
+<draw-element></draw-element>
 ```
 
 ## Polymer Component for painting
